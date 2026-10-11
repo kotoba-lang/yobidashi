@@ -1,13 +1,16 @@
 ;; yobidashi — portable .cljk; every dependency is first-party kotoba-lang.
-;; Sibling libraries of this project are :local/root until they are published;
-;; published ones are pinned by sha.
+;; Every dependency is pinned by a sha reachable from its upstream main.
 {:paths ["src"]
- :deps {io.github.kotoba-lang/monban {:local/root "../monban"}
-        io.github.kotoba-lang/nafuda {:local/root "../nafuda"}
+ :deps {io.github.kotoba-lang/monban {:git/url "https://github.com/kotoba-lang/monban.git"
+                              :git/sha "4d43af6ad54dee01d238b1e852d5bb865d733c22"}
+        io.github.kotoba-lang/nafuda {:git/url "https://github.com/kotoba-lang/nafuda.git"
+                              :git/sha "967636d1d7bf2d1047c61308763f43cb1c862921"}
         io.github.kotoba-lang/moyai-ledger {:git/url "https://github.com/kotoba-lang/moyai-ledger.git"
                                     :git/sha "60f79f5bd586a99234d51794148ee5eb50427ad7"}
-        io.github.kotoba-lang/tsunagi {:local/root "../tsunagi"}
-        io.github.kotoba-lang/shamir {:local/root "../shamir"}
+        io.github.kotoba-lang/tsunagi {:git/url "https://github.com/kotoba-lang/tsunagi.git"
+                               :git/sha "5942cc868e2cd269f72cd604b00b330cba93dfb6"}
+        io.github.kotoba-lang/shamir {:git/url "https://github.com/kotoba-lang/shamir.git"
+                              :git/sha "fdd87fdd30e6ec566723095a487eb96e28a150af"}
         io.github.kotoba-lang/edn {:git/url "https://github.com/kotoba-lang/edn.git"
                            :git/sha "b164f5cb4587f50c05446361905743f902cd6932"}
         io.github.kotoba-lang/bytes {:git/url "https://github.com/kotoba-lang/bytes.git"
