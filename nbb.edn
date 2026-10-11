@@ -1,15 +1,15 @@
 ;; The kbb engine reads :deps from HERE, not from deps.edn. Same coordinates.
 {:paths ["src" "test"]
  :deps {io.github.kotoba-lang/monban {:git/url "https://github.com/kotoba-lang/monban.git"
-                              :git/sha "4d43af6ad54dee01d238b1e852d5bb865d733c22"}
+                              :git/sha "fcefea8170c0e1500d41146e239684f44770cf61"}
         io.github.kotoba-lang/nafuda {:git/url "https://github.com/kotoba-lang/nafuda.git"
-                              :git/sha "967636d1d7bf2d1047c61308763f43cb1c862921"}
+                              :git/sha "e280d849cadd8bbfed03b5a4917a8da5655abb76"}
         io.github.kotoba-lang/moyai-ledger {:git/url "https://github.com/kotoba-lang/moyai-ledger.git"
                                     :git/sha "60f79f5bd586a99234d51794148ee5eb50427ad7"}
         io.github.kotoba-lang/tsunagi {:git/url "https://github.com/kotoba-lang/tsunagi.git"
-                               :git/sha "5942cc868e2cd269f72cd604b00b330cba93dfb6"}
+                               :git/sha "a6bf8e2e91bce377241c7733c4dc87bf894f9489"}
         io.github.kotoba-lang/shamir {:git/url "https://github.com/kotoba-lang/shamir.git"
-                              :git/sha "fdd87fdd30e6ec566723095a487eb96e28a150af"}
+                              :git/sha "01ae8c7e715ee4f213b8bcf9ee93d77a75caf888"}
         io.github.kotoba-lang/edn {:git/url "https://github.com/kotoba-lang/edn.git"
                            :git/sha "b164f5cb4587f50c05446361905743f902cd6932"}
         io.github.kotoba-lang/bytes {:git/url "https://github.com/kotoba-lang/bytes.git"
@@ -19,7 +19,7 @@
         io.github.kotoba-lang/org-ietf-x25519 {:git/url "https://github.com/kotoba-lang/org-ietf-x25519.git"
                                        :git/sha "53d8639ac410d8054d6f871836e8717521c56fdc"}
         io.github.kotoba-lang/org-nist-sha2 {:git/url "https://github.com/kotoba-lang/org-nist-sha2.git"
-                                     :git/sha "5e999868e061baed603ab592f0436722f5a2b468"}
+                                     :git/sha "59e0ccb99106dd3e4f8a5047346001e38708b084"}
         io.github.kotoba-lang/org-ietf-chacha20-poly1305 {:git/url "https://github.com/kotoba-lang/org-ietf-chacha20-poly1305.git"
                                                   :git/sha "2c26f2772f2fb0f8fbf3e0487b32bb662fc8496f"}
         io.github.kotoba-lang/org-ietf-hpke {:git/url "https://github.com/kotoba-lang/org-ietf-hpke.git"
@@ -27,6 +27,6 @@
         io.github.kotoba-lang/test {:git/url "https://github.com/kotoba-lang/test.git"
                             :git/sha "c43aff05b24390b5ad0c8d22641538b41a6f6d9e"}
         io.github.kotoba-lang/text {:git/url "https://github.com/kotoba-lang/text.git"
-                            :git/sha "6c6cd30d19c1a2304d6601966c71065feda5bb4a"}
+                            :git/sha "3e99104d80a23019b722ab0f3aae32141a478631"}
         io.github.kotoba-lang/error {:git/url "https://github.com/kotoba-lang/error.git"
                              :git/sha "550755327b4d43eff757f80e824278e6fac7e8c6"}}}
