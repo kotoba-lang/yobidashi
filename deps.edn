@@ -1,0 +1,36 @@
+;; yobidashi — portable .cljk; every dependency is first-party kotoba-lang.
+;; Sibling libraries of this project are :local/root until they are published;
+;; published ones are pinned by sha.
+{:paths ["src"]
+ :deps {io.github.kotoba-lang/monban {:local/root "../monban"}
+        io.github.kotoba-lang/nafuda {:local/root "../nafuda"}
+        io.github.kotoba-lang/moyai-ledger {:git/url "https://github.com/kotoba-lang/moyai-ledger.git"
+                                    :git/sha "60f79f5bd586a99234d51794148ee5eb50427ad7"}
+        io.github.kotoba-lang/tsunagi {:local/root "../tsunagi"}
+        io.github.kotoba-lang/shamir {:local/root "../shamir"}
+        io.github.kotoba-lang/edn {:git/url "https://github.com/kotoba-lang/edn.git"
+                           :git/sha "b164f5cb4587f50c05446361905743f902cd6932"}
+        io.github.kotoba-lang/bytes {:git/url "https://github.com/kotoba-lang/bytes.git"
+                             :git/sha "630e37cfce401e5e508ca48a57f2751e3b30e3b1"}
+        io.github.kotoba-lang/org-ietf-ed25519 {:git/url "https://github.com/kotoba-lang/org-ietf-ed25519.git"
+                                        :git/sha "238e32d4662b2682e7112c870818a1dcdde2143c"}
+        io.github.kotoba-lang/org-ietf-x25519 {:git/url "https://github.com/kotoba-lang/org-ietf-x25519.git"
+                                       :git/sha "53d8639ac410d8054d6f871836e8717521c56fdc"}
+        io.github.kotoba-lang/org-nist-sha2 {:git/url "https://github.com/kotoba-lang/org-nist-sha2.git"
+                                     :git/sha "5e999868e061baed603ab592f0436722f5a2b468"}
+        io.github.kotoba-lang/org-ietf-chacha20-poly1305 {:git/url "https://github.com/kotoba-lang/org-ietf-chacha20-poly1305.git"
+                                                  :git/sha "2c26f2772f2fb0f8fbf3e0487b32bb662fc8496f"}
+        io.github.kotoba-lang/org-ietf-hpke {:git/url "https://github.com/kotoba-lang/org-ietf-hpke.git"
+                                     :git/sha "9f76b8f28faf428d70ac2dbe30b9416031928272"}
+        io.github.kotoba-lang/test {:git/url "https://github.com/kotoba-lang/test.git"
+                            :git/sha "c43aff05b24390b5ad0c8d22641538b41a6f6d9e"}
+        io.github.kotoba-lang/text {:git/url "https://github.com/kotoba-lang/text.git"
+                            :git/sha "6c6cd30d19c1a2304d6601966c71065feda5bb4a"}
+        io.github.kotoba-lang/error {:git/url "https://github.com/kotoba-lang/error.git"
+                             :git/sha "550755327b4d43eff757f80e824278e6fac7e8c6"}}
+ :aliases
+ {:test {:extra-paths ["test"]
+         :extra-deps {io.github.cognitect-labs/test-runner
+                      {:git/tag "v0.5.1" :git/sha "dfb30dd6605cb6c0efc275e1df1736f6e90d4d73"}}
+         :main-opts ["-m" "cognitect.test-runner"]
+         :exec-fn cognitect.test-runner.api/test}}}
